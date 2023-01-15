@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Contato</title>
+	<title>Contato - Bronha</title>
+	<style>
+		body {
+			background-color: #ffbf00; /* Âmbar */
+		}	h1 {
+		color: #000000; /* Preto */
+		text-align: center;
+	}
+
+	.container {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	form {
+		margin: 50px auto;
+		text-align: left;
+		width: 50%;
+	}
+
+	label {
+		color: #000000; /* Preto */
+		font-size: 18px;
+		margin-bottom: 5px;
+		display: block;
+	}
+
+	input[type="text"], textarea {
+		padding: 10px;
+		margin-bottom: 20px;
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: 5px;
+		border: 1px solid #000000; /* Preto */
+	}
+
+	textarea {
+		height: 200px;
+	}
+
+	.submit-btn {
+		background-color: #000000; /* Preto */
+		color: #ffbf00; /* Âmbar */
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		margin-top: 20px;
+	}
+
+	.submit-btn:hover {
+		background-color: #ffbf00; /* Âmbar */
+		color: #000000; /* Preto */
+	}
+</style>
 </head>
 <body>
-    <h1>CONTATO</h1>
+	<h1>Entre em contato conosco</h1>
+	<div class="container">
+		<form>
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome">		<label for="email">E-mail:</label>
+		<input type="text" id="email" name="email">
+
+		<label for="mensagem">Mensagem:</label>
+		<textarea id="mensagem" name="mensagem"></textarea>
+
+		<input type="submit" value="Enviar" class="submit-btn">
+	</form>
+</div>
 </body>
 </html>
